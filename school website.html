@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>School Announcement</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 20px;
+      background-color: #f9f9f9;
+    }
+
+    h2 {
+      text-align: center;
+      color: #57ab13;
+      margin-bottom: 20px;
+    }
+
+    .notice-box {
+      position: relative; 
+      background-color: #eaf2f8; 
+      padding: 20px;
+      border-radius: 10px;
+      overflow: auto; 
+      max-height: 200px; 
+    }
+
+    .notice-box img {
+      float: left;
+      width: 100px; 
+      height: 100px;
+      margin-right: 15px;
+      border-radius: 8px;
+    }
+
+    .badge {
+      position: absolute;
+      top: 10px;
+      right: 10px;
+      background-color: #e74c3c;
+      color: white;
+      padding: 5px 10px;
+      border-radius: 5px;
+      font-size: 12px;
+      font-weight: bold;
+    }
+
+    .clearfix::after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+<body>
+
+
+  <h2>Important Notice</h2>
+
+  <div class="notice-box clearfix">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR9YDZFb7zPJ9U-hQwR2KTMJ1vNE7ULYY9KJQ&s">
+
+    <p>
+      Dear students and parents, please note that the upcoming parent-teacher meeting 
+      will be held on Friday at 10:00 AM in the school auditorium. All students are 
+      requested to attend with their parents. Kindly ensure you follow the schedule 
+      and guidelines provided by the school administration. For further information, 
+      please contact the school office.
+    </p>
+
+    <div class="badge">New</div>
+  </div>
+
+</body>
+</html>
