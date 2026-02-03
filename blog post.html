@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+        body{
+            font-family: sans-serif;
+            background-color: rgb(163, 163, 166);
+            padding: 20px;
+        }
+        .blog-post{
+            background-color: rgb(212, 27, 212);
+            padding: 20px;
+            width: 700px;
+            margin: auto;
+            border-radius: 8px;
+        }
+        h2{
+            margin-bottom: 5px;
+        }
+        .author{
+            color: brown;
+            font-size: 20px;
+            margin-bottom: 15px;
+        }
+        .content::first-line{
+            font-weight: bold;
+        }
+        .content::first-letter{
+            font-size: 40px;
+            color: rgb(7, 75, 40);
+            font-weight: 17px;
+        }
+        .quote{
+            background-color: beige;
+            padding: 15px;
+            margin: 20px;
+            font-style: italic;
+            border-left: 5px solid;
+            position: relative;
+
+        }
+        .quote::before{
+            content: "'";
+            font-size: 40px;
+            color: #333;
+            position: absolute;
+            left: 5px;
+            top: -10px;
+        }
+        a:link {
+            color: blue;
+            text-decoration: none;
+        }
+        a:visited {
+            color: purple;
+        }
+         a:hover {
+            color: red;
+            text-decoration: underline;
+        }
+        .headings h4 {
+            display: inline-block;
+            margin-right: 20px;
+        }
+         h4 + h4 {
+            color: green;
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <div class="blog-post">
+        <h2>My First Blog Post</h2>
+        <div class="author">--By Aniesh J</div>
+        <p class="content">This is the content of my first blog post. It's a simple and clean design to showcase my thoughts and ideas.Blogging is a great way to share knowledge and ideas with the world.
+            It helps improve writing skills and connect with people who share similar interests.
+        <a href="#">Read more articles</a></p>
+
+            <div class="quote">
+                This is a very simple quote of the blog post
+            </div>
+            <div class="headings">
+            <h4>Category</h4>
+            <h4>Technology</h4>
+        </div>
+    </div>
+</body>
+</html>
