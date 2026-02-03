@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Simple CSS Selectors Demo</title>
+    <style>
+        section p {
+            margin-bottom: 15px;
+        }
+
+        section p::first-line {
+            font-weight: bold;
+        }
+
+        section p::first-letter {
+            color: red;
+            font-size: 28px;
+        }
+
+        h3+h3 {
+            color: green;
+        }
+
+        a:link {
+            color: blue;
+        }
+
+        a:visited {
+            color: purple;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul li:first-child a {
+            color: red;
+        }
+
+        div > ul {
+            padding-left: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <section>
+        <h2>About Our Website</h2>
+        <p>
+            This is the first paragraph inside the section. It demonstrates
+            the first-line and first-letter pseudo-elements in CSS.
+        </p>
+        <p>
+            This is the second paragraph. Only the first line is bold and
+            only the first letter is styled differently.
+        </p>
+    </section>
+
+    <div>
+        <h3>First Heading</h3>
+        <h3>Second Heading</h3>
+    </div>
+
+    <div>
+        <h4>Useful Links</h4>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+        </ul>
+    </div>
+
+</body>
+</html>
